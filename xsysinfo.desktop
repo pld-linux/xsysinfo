@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Xsysinfo
+Comment=System Information
+Comment[pl]=Informacje o systemie
+Exec=xsysinfo
+Terminal=0
+Type=Application
