@@ -1,0 +1,11 @@
+--- xsysinfo-1.7/xsysinfo.c.leak	Sun Jun 11 17:17:34 2000
++++ xsysinfo-1.7/xsysinfo.c	Sun Jun 11 17:17:46 2000
+@@ -119,7 +119,7 @@
+ 	struct load load;
+ 	XgBarGaugeValues *gauge = (XgBarGaugeValues *) call_data;
+ 
+-	load.cpu = (char *)malloc(7*sizeof(char));
++	load.cpu = (char *)alloca(7*sizeof(char));
+ 	strcpy(load.cpu, (char *)client_data);
+ 	get_load(&load);
+ 
