@@ -41,14 +41,14 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/Administration
 
-gzip -9nf README
+gzip -9nf README CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz
+%doc {README,CHANGES}.gz
 %attr(755,root,root) %{_bindir}/xsysinfo
 %config %{_libdir}/X11/app-defaults/XSysinfo
 %config %{_libdir}/X11/app-defaults/XSysinfo-color
