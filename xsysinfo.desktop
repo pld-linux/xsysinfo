@@ -1,10 +1,12 @@
 [Desktop Entry]
 Name=Xsysinfo
 Comment=System Information
-Comment[es]=Información del Sistema
+Comment[es]=InformaciÃ³n del Sistema
 Comment[pl]=Informacje o systemie
-Comment[pt_BR]Informações do Sistema
+Comment[pt]=InformaÃ§Ãµes do Sistema
+Comment[pt_BR]=InformaÃ§Ãµes do Sistema
 Icon=xsysinfo.png
 Exec=xsysinfo
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
