@@ -1,5 +1,5 @@
 Summary:	An X Window System kernel parameter monitoring tool
-Summary(de):	präsentiert Balkendiagramme der Systemauslastung 
+Summary(de):	präsentiert Balkendiagramme der Systemauslastung
 Summary(fr):	affiche la charge système sous forme d'histogrammes
 Summary(pl):	Narzêdzie do monitorowania parametrów systemu pod X Window
 Summary(tr):	Sistem yükünü grafiksel olarak belirtir
