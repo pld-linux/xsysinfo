@@ -4,13 +4,17 @@ Summary(fr):	affiche la charge système sous forme d'histogrammes
 Summary(pl):	Narzêdzie do monitorowania parametrów systemu pod X Window
 Summary(tr):	Sistem yükünü grafiksel olarak belirtir
 Name:		xsysinfo
-Version:	1.6
-Release:	6
+Version:	1.7
+Release:	4
 Copyright:	MIT
-Group:		X11/Utilities
-Group(pl):	X11/Narzêdzia
+Group:		X11/Applications
+Group(de):	X11/Applikationen
+Group(pl):	X11/Aplikacje
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/%{name}-%{version}.tar.gz
-Source1:	xsysinfo.desktop
+Source1:	%{name}.desktop
+Source2:	%{name}.png
+Patch0:		%{name}-leak.patch
+Icon:		xsysinfo.xpm
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,21 +50,23 @@ ve bir pencere içinde sistemin yükü zamana baðlý olarak izlenebilir.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} clean
 
 xmkmf
-%{__make} CXXDEBUGFLAGS="$RPM_OPT_FLAGS" \
-	CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%{__make} CXXDEBUGFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g}" \
+	CDEBUGFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Administration
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/System,%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Administration
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/System
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 gzip -9nf README CHANGES
 
@@ -69,9 +75,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README,CHANGES}.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/xsysinfo
 %config %{_libdir}/X11/app-defaults/XSysinfo
 %config %{_libdir}/X11/app-defaults/XSysinfo-color
-
-%{_applnkdir}/Administration/xsysinfo.desktop
+%{_applnkdir}/System/xsysinfo.desktop
+%{_pixmapsdir}/*
