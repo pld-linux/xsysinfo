@@ -93,14 +93,13 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/System,%{_pixmapsdir}}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/System
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf README CHANGES
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README CHANGES
 %attr(755,root,root) %{_bindir}/xsysinfo
 %config %{_libdir}/X11/app-defaults/XSysinfo
 %config %{_libdir}/X11/app-defaults/XSysinfo-color
