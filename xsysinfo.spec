@@ -1,7 +1,7 @@
 Summary: 	An X Window System kernel parameter monitoring tool
 Summary(de):	präsentiert Balkendiagramme der Systemauslastung 
 Summary(fr):	affiche la charge système sous forme d'histogrammes
-Summary(pl):	Narzêdzie monitoruj±ce parametry systemu dla X Window System
+Summary(pl):	Narzêdzie do monitorowania parametry systemu pod X Window
 Summary(tr):	Sistem yükünü grafiksel olarak belirtir
 Name: 		xsysinfo
 Version: 	1.6
@@ -34,9 +34,9 @@ performances dans une fenêtre pour que vous puissiez facilement suivre
 l'évolution.
 
 %description -l pl
-Xsysinfo jest graficznym narzêdziem dla X Window System, monitoruj±cym
-parametry systemu: obci±¿enie i ¶rednie obci±¿enie procesora, wielko¶æ
-pamiêci i partycji swap, i wy¶wietlaj±cym je w postaci s³upków.
+Xsysinfo jest graficznym narzêdziem pod X Window s³u¿±cym do monitorowania
+ró¿nych parametrów pracy systemu jak: obci±¿enie i ¶rednie obci±¿enie
+procesora, zajêto¶æ pamiêci i partycji swap
 
 %description -l tr
 Sistem performansýný gösteren bazý iþaretler (CPU yükü, boþ disk alaný,
