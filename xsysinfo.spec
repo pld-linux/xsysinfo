@@ -53,7 +53,7 @@ ve bir pencere içinde sistemin yükü zamana baðlý olarak izlenebilir.
 %build
 %{__make} clean
 
-xmkmf
+#xmkmf
 %{__make} CXXDEBUGFLAGS="%{rpmcflags}" \
 	CDEBUGFLAGS="%{rpmcflags}"
 
