@@ -20,7 +20,6 @@ Icon:		xsysinfo.xpm
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 Xsysinfo is a graphic kernel monitoring tool for the X Window System.
