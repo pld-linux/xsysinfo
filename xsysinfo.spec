@@ -6,7 +6,7 @@ Summary(tr):	Sistem yükünü grafiksel olarak belirtir
 Name:		xsysinfo
 Version:	1.7
 Release:	4
-Copyright:	MIT
+License:	MIT
 Group:		X11/Applications
 Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
@@ -41,7 +41,7 @@ facilement suivre l'évolution.
 %description -l pl
 Xsysinfo jest graficznym narzêdziem pod X Window s³u¿±cym do
 monitorowania ró¿nych parametrów pracy systemu jak: obci±¿enie i
-¶rednie obci±¿enie procesora, zajêto¶æ pamiêci i partycji swap
+¶rednie obci±¿enie procesora, zajêto¶æ pamiêci i partycji swap.
 
 %description -l tr
 Sistem performansýný gösteren bazý iþaretler (CPU yükü, boþ disk
@@ -56,8 +56,8 @@ ve bir pencere içinde sistemin yükü zamana baðlý olarak izlenebilir.
 %{__make} clean
 
 xmkmf
-%{__make} CXXDEBUGFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g}" \
-	CDEBUGFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O0 -g}"
+%{__make} CXXDEBUGFLAGS="%{rpmcflags}" \
+	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
