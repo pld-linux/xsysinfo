@@ -12,7 +12,7 @@ Group(pl):	X11/Narzêdzia
 Source0: 	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/%{name}-%{version}.tar.gz
 Source1:	xsysinfo.desktop
 BuildRequires:	XFree86-devel
-BuildRoot: 	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
