@@ -1,11 +1,15 @@
 Summary:	An X Window System kernel parameter monitoring tool
 Summary(de):	prДsentiert Balkendiagramme der Systemauslastung
+Summary(es):	EnseЯa la carga del sistema con grАfico de barras
 Summary(fr):	affiche la charge systХme sous forme d'histogrammes
 Summary(pl):	NarzЙdzie do monitorowania parametrСw systemu pod X Window
+Summary(pt_BR):	Mostra a carga do sistema com grАfico de barras
+Summary(ru):	Программа мониторинга системной загрузки
 Summary(tr):	Sistem yЭkЭnЭ grafiksel olarak belirtir
+Summary(uk):	Програма мон╕торингу системного завантаження
 Name:		xsysinfo
 Version:	1.7
-Release:	4
+Release:	5
 License:	MIT
 Group:		X11/Applications
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/%{name}-%{version}.tar.gz
@@ -29,6 +33,12 @@ u.a. Netzwerk- und CPU-Auslastung, Festplattenspeicher u. -nutzung,
 usw. Stellt дnderungen der Systemleistung leicht erkennbar in einem
 Fenster dar.
 
+%description -l es
+Varios aspectos del desempeЯo del sistema pueden ser monitorados con
+xsysinfo, incluyendo trАfico de red, carga de la CPU, espacio en
+disco, uso de disco, y mАs. EnseЯa tambiИn un histСrico del desempeЯo
+en una ventana para que puedas ver los cambios fАcilmente.
+
 %description -l fr
 De nombreux aspects des performances du systХme peuvent Йtre observИs
 avec xsysinfo, dont le trafic sur le rИseau, la charge CPU, l'espace
@@ -41,10 +51,27 @@ Xsysinfo jest graficznym narzЙdziem pod X Window sЁu©╠cym do
 monitorowania rС©nych parametrСw pracy systemu jak: obci╠©enie i
 ╤rednie obci╠©enie procesora, zajЙto╤Ф pamiЙci i partycji swap.
 
+%description -l pt_BR
+VАrios aspectos da performance do sistema podem ser monitorados com o
+xsysinfo, incluindo trАfego de rede, carga da CPU, espaГo em disco,
+uso de disco, e mais. Mostra tambИm um histСrico da performance em uma
+janela para que vocЙ possa ver as mudanГas facilmente.
+
+%description -l ru
+Используя xsysinfo можно мониторить многие аспекты производительности
+системы, включая сетевой траффик, загрузку процессора, место на диске,
+использование диска и многое другое. Показывает историю изменений в
+окне, так что можно легко отследить изменения.
+
 %description -l tr
 Sistem performansЩnЩ gЖsteren bazЩ iЧaretler (CPU yЭkЭ, boЧ disk
 alanЩ, kullanЩmЩ, aП trafiПi, vs) xsysinfo yardЩmЩyla gЖzlemlenebilir
 ve bir pencere iГinde sistemin yЭkЭ zamana baПlЩ olarak izlenebilir.
+
+%description -l uk
+За допомогою xsysinfo можна в╕дсл╕дковувати багато параметр╕в
+функц╕онування системи, включаючи мережевий траф╕к, завантаження
+процесора, м╕сце на диску та ╕нше.
 
 %prep
 %setup -q
