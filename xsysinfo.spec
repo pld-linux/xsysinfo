@@ -12,14 +12,15 @@ Version:	1.7
 Release:	5
 License:	MIT
 Group:		X11/Applications
-Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/%{name}-%{version}.tar.gz
+#Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	1a2dab686d087923d8e19b2c2ba8d183
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-leak.patch
 Icon:		xsysinfo.xpm
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 Xsysinfo is a graphic kernel monitoring tool for the X Window System.
