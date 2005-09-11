@@ -9,7 +9,7 @@ Summary(tr):	Sistem yЭkЭnЭ grafiksel olarak belirtir
 Summary(uk):	Програма мон╕торингу системного завантаження
 Name:		xsysinfo
 Version:	1.7
-Release:	5
+Release:	6
 License:	MIT
 Group:		X11/Applications
 #Source0:	ftp://sunsite.unc.edu/pub/Linux/system/status/xstatus/%{name}-%{version}.tar.gz
@@ -18,9 +18,12 @@ Source0:	%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-leak.patch
-Icon:		xsysinfo.xpm
+Icon:		%{name}.xpm
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+	
+%define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
+%define		_xbindir	/usr/X11R6/bin
 
 %description
 Xsysinfo is a graphic kernel monitoring tool for the X Window System.
@@ -86,11 +89,12 @@ ve bir pencere iГinde sistemin yЭkЭ zamana baПlЩ olarak izlenebilir.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/System,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/System
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 
@@ -100,8 +104,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README CHANGES
-%attr(755,root,root) %{_bindir}/xsysinfo
-%config %{_libdir}/X11/app-defaults/XSysinfo
-%config %{_libdir}/X11/app-defaults/XSysinfo-color
-%{_applnkdir}/System/xsysinfo.desktop
+%attr(755,root,root) %{_xbindir}/xsysinfo
+%config %{_appdefsdir}/XSysinfo
+%config %{_appdefsdir}/XSysinfo-color
+%{_desktopdir}/xsysinfo.desktop
 %{_pixmapsdir}/*
