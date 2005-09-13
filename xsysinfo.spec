@@ -23,7 +23,6 @@ BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 	
 %define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
-%define		_xbindir	/usr/X11R6/bin
 
 %description
 Xsysinfo is a graphic kernel monitoring tool for the X Window System.
@@ -84,7 +83,8 @@ ve bir pencere içinde sistemin yükü zamana baðlý olarak izlenebilir.
 %{__make} clean
 
 #xmkmf
-%{__make} CXXDEBUGFLAGS="%{rpmcflags}" \
+%{__make} \
+	CC="%{__cc}" \
 	CDEBUGFLAGS="%{rpmcflags}"
 
 %install
@@ -92,7 +92,8 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	BINDIR=%{_bindir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
@@ -104,8 +105,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README CHANGES
-%attr(755,root,root) %{_xbindir}/xsysinfo
-%config %{_appdefsdir}/XSysinfo
-%config %{_appdefsdir}/XSysinfo-color
+%attr(755,root,root) %{_bindir}/xsysinfo
+%{_appdefsdir}/XSysinfo
+%{_appdefsdir}/XSysinfo-color
 %{_desktopdir}/xsysinfo.desktop
 %{_pixmapsdir}/*
