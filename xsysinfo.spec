@@ -20,7 +20,7 @@ Source2:	%{name}.png
 Patch0:		%{name}-leak.patch
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-	
+
 %define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
 
 %description
