@@ -1,12 +1,12 @@
 Summary:	An X Window System kernel parameter monitoring tool
-Summary(de):	prДsentiert Balkendiagramme der Systemauslastung
-Summary(es):	EnseЯa la carga del sistema con grАfico de barras
-Summary(fr):	affiche la charge systХme sous forme d'histogrammes
-Summary(pl):	NarzЙdzie do monitorowania parametrСw systemu pod X Window
-Summary(pt_BR):	Mostra a carga do sistema com grАfico de barras
-Summary(ru):	Программа мониторинга системной загрузки
-Summary(tr):	Sistem yЭkЭnЭ grafiksel olarak belirtir
-Summary(uk):	Програма мон╕торингу системного завантаження
+Summary(de.UTF-8):   prц╓sentiert Balkendiagramme der Systemauslastung
+Summary(es.UTF-8):   Enseц╠a la carga del sistema con grц║fico de barras
+Summary(fr.UTF-8):   affiche la charge systц╗me sous forme d'histogrammes
+Summary(pl.UTF-8):   Narzд≥dzie do monitorowania parametrцЁw systemu pod X Window
+Summary(pt_BR.UTF-8):   Mostra a carga do sistema com grц║fico de barras
+Summary(ru.UTF-8):   п÷я─п╬пЁя─п╟п╪п╪п╟ п╪п╬п╫п╦я┌п╬я─п╦п╫пЁп╟ я│п╦я│я┌п╣п╪п╫п╬п╧ п╥п╟пЁя─я┐п╥п╨п╦
+Summary(tr.UTF-8):   Sistem yц╪kц╪nц╪ grafiksel olarak belirtir
+Summary(uk.UTF-8):   п÷я─п╬пЁя─п╟п╪п╟ п╪п╬п╫я√я┌п╬я─п╦п╫пЁя┐ я│п╦я│я┌п╣п╪п╫п╬пЁп╬ п╥п╟п╡п╟п╫я┌п╟п╤п╣п╫п╫я▐
 Name:		xsysinfo
 Version:	1.7
 Release:	6
@@ -28,51 +28,51 @@ Xsysinfo is a graphic kernel monitoring tool for the X Window System.
 Xsysinfo displays vertical bars for certain kernel parameters: CPU
 load average, CPU load, memory and swap sizes.
 
-%description -l de
-Viele Aspekte der Systemleistung kЖnnen mit xsysinfo Эberwacht werden,
+%description -l de.UTF-8
+Viele Aspekte der Systemleistung kц╤nnen mit xsysinfo ц╪berwacht werden,
 u.a. Netzwerk- und CPU-Auslastung, Festplattenspeicher u. -nutzung,
-usw. Stellt дnderungen der Systemleistung leicht erkennbar in einem
+usw. Stellt ц└nderungen der Systemleistung leicht erkennbar in einem
 Fenster dar.
 
-%description -l es
-Varios aspectos del desempeЯo del sistema pueden ser monitorados con
-xsysinfo, incluyendo trАfico de red, carga de la CPU, espacio en
-disco, uso de disco, y mАs. EnseЯa tambiИn un histСrico del desempeЯo
-en una ventana para que puedas ver los cambios fАcilmente.
+%description -l es.UTF-8
+Varios aspectos del desempeц╠o del sistema pueden ser monitorados con
+xsysinfo, incluyendo trц║fico de red, carga de la CPU, espacio en
+disco, uso de disco, y mц║s. Enseц╠a tambiц╘n un histцЁrico del desempeц╠o
+en una ventana para que puedas ver los cambios fц║cilmente.
 
-%description -l fr
-De nombreux aspects des performances du systХme peuvent Йtre observИs
-avec xsysinfo, dont le trafic sur le rИseau, la charge CPU, l'espace
+%description -l fr.UTF-8
+De nombreux aspects des performances du systц╗me peuvent ц╙tre observц╘s
+avec xsysinfo, dont le trafic sur le rц╘seau, la charge CPU, l'espace
 disque, l'utilisation des disques, et plus encore. Il affiche une
-historique des performances dans une fenЙtre pour que vous puissiez
-facilement suivre l'Иvolution.
+historique des performances dans une fenц╙tre pour que vous puissiez
+facilement suivre l'ц╘volution.
 
-%description -l pl
-Xsysinfo jest graficznym narzЙdziem pod X Window sЁu©╠cym do
-monitorowania rС©nych parametrСw pracy systemu jak: obci╠©enie i
-╤rednie obci╠©enie procesora, zajЙto╤Ф pamiЙci i partycji swap.
+%description -l pl.UTF-8
+Xsysinfo jest graficznym narzд≥dziem pod X Window sе┌uе╪д┘cym do
+monitorowania rцЁе╪nych parametrцЁw pracy systemu jak: obciд┘е╪enie i
+е⌡rednie obciд┘е╪enie procesora, zajд≥toе⌡д┤ pamiд≥ci i partycji swap.
 
-%description -l pt_BR
-VАrios aspectos da performance do sistema podem ser monitorados com o
-xsysinfo, incluindo trАfego de rede, carga da CPU, espaГo em disco,
-uso de disco, e mais. Mostra tambИm um histСrico da performance em uma
-janela para que vocЙ possa ver as mudanГas facilmente.
+%description -l pt_BR.UTF-8
+Vц║rios aspectos da performance do sistema podem ser monitorados com o
+xsysinfo, incluindo trц║fego de rede, carga da CPU, espaц╖o em disco,
+uso de disco, e mais. Mostra tambц╘m um histцЁrico da performance em uma
+janela para que vocц╙ possa ver as mudanц╖as facilmente.
 
-%description -l ru
-Используя xsysinfo можно мониторить многие аспекты производительности
-системы, включая сетевой траффик, загрузку процессора, место на диске,
-использование диска и многое другое. Показывает историю изменений в
-окне, так что можно легко отследить изменения.
+%description -l ru.UTF-8
+п≤я│п©п╬п╩я▄п╥я┐я▐ xsysinfo п╪п╬п╤п╫п╬ п╪п╬п╫п╦я┌п╬я─п╦я┌я▄ п╪п╫п╬пЁп╦п╣ п╟я│п©п╣п╨я┌я▀ п©я─п╬п╦п╥п╡п╬п╢п╦я┌п╣п╩я▄п╫п╬я│я┌п╦
+я│п╦я│я┌п╣п╪я▀, п╡п╨п╩я▌я┤п╟я▐ я│п╣я┌п╣п╡п╬п╧ я┌я─п╟я└я└п╦п╨, п╥п╟пЁя─я┐п╥п╨я┐ п©я─п╬я├п╣я│я│п╬я─п╟, п╪п╣я│я┌п╬ п╫п╟ п╢п╦я│п╨п╣,
+п╦я│п©п╬п╩я▄п╥п╬п╡п╟п╫п╦п╣ п╢п╦я│п╨п╟ п╦ п╪п╫п╬пЁп╬п╣ п╢я─я┐пЁп╬п╣. п÷п╬п╨п╟п╥я▀п╡п╟п╣я┌ п╦я│я┌п╬я─п╦я▌ п╦п╥п╪п╣п╫п╣п╫п╦п╧ п╡
+п╬п╨п╫п╣, я┌п╟п╨ я┤я┌п╬ п╪п╬п╤п╫п╬ п╩п╣пЁп╨п╬ п╬я┌я│п╩п╣п╢п╦я┌я▄ п╦п╥п╪п╣п╫п╣п╫п╦я▐.
 
-%description -l tr
-Sistem performansЩnЩ gЖsteren bazЩ iЧaretler (CPU yЭkЭ, boЧ disk
-alanЩ, kullanЩmЩ, aП trafiПi, vs) xsysinfo yardЩmЩyla gЖzlemlenebilir
-ve bir pencere iГinde sistemin yЭkЭ zamana baПlЩ olarak izlenebilir.
+%description -l tr.UTF-8
+Sistem performansд╠nд╠ gц╤steren bazд╠ iе÷aretler (CPU yц╪kц╪, boе÷ disk
+alanд╠, kullanд╠mд╠, aд÷ trafiд÷i, vs) xsysinfo yardд╠mд╠yla gц╤zlemlenebilir
+ve bir pencere iц╖inde sistemin yц╪kц╪ zamana baд÷lд╠ olarak izlenebilir.
 
-%description -l uk
-За допомогою xsysinfo можна в╕дсл╕дковувати багато параметр╕в
-функц╕онування системи, включаючи мережевий траф╕к, завантаження
-процесора, м╕сце на диску та ╕нше.
+%description -l uk.UTF-8
+п≈п╟ п╢п╬п©п╬п╪п╬пЁп╬я▌ xsysinfo п╪п╬п╤п╫п╟ п╡я√п╢я│п╩я√п╢п╨п╬п╡я┐п╡п╟я┌п╦ п╠п╟пЁп╟я┌п╬ п©п╟я─п╟п╪п╣я┌я─я√п╡
+я└я┐п╫п╨я├я√п╬п╫я┐п╡п╟п╫п╫я▐ я│п╦я│я┌п╣п╪п╦, п╡п╨п╩я▌я┤п╟я▌я┤п╦ п╪п╣я─п╣п╤п╣п╡п╦п╧ я┌я─п╟я└я√п╨, п╥п╟п╡п╟п╫я┌п╟п╤п╣п╫п╫я▐
+п©я─п╬я├п╣я│п╬я─п╟, п╪я√я│я├п╣ п╫п╟ п╢п╦я│п╨я┐ я┌п╟ я√п╫я┬п╣.
 
 %prep
 %setup -q
