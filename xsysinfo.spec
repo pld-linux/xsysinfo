@@ -1,12 +1,12 @@
 Summary:	An X Window System kernel parameter monitoring tool
-Summary(de.UTF-8):   präsentiert Balkendiagramme der Systemauslastung
-Summary(es.UTF-8):   Enseña la carga del sistema con gráfico de barras
-Summary(fr.UTF-8):   affiche la charge système sous forme d'histogrammes
-Summary(pl.UTF-8):   Narzędzie do monitorowania parametrów systemu pod X Window
-Summary(pt_BR.UTF-8):   Mostra a carga do sistema com gráfico de barras
-Summary(ru.UTF-8):   Программа мониторинга системной загрузки
-Summary(tr.UTF-8):   Sistem yükünü grafiksel olarak belirtir
-Summary(uk.UTF-8):   Програма моніторингу системного завантаження
+Summary(de.UTF-8):	präsentiert Balkendiagramme der Systemauslastung
+Summary(es.UTF-8):	Enseña la carga del sistema con gráfico de barras
+Summary(fr.UTF-8):	affiche la charge système sous forme d'histogrammes
+Summary(pl.UTF-8):	Narzędzie do monitorowania parametrów systemu pod X Window
+Summary(pt_BR.UTF-8):	Mostra a carga do sistema com gráfico de barras
+Summary(ru.UTF-8):	Программа мониторинга системной загрузки
+Summary(tr.UTF-8):	Sistem yükünü grafiksel olarak belirtir
+Summary(uk.UTF-8):	Програма моніторингу системного завантаження
 Name:		xsysinfo
 Version:	1.7
 Release:	6
